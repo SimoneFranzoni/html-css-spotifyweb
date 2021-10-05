@@ -10,30 +10,88 @@
     clear: both;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
+
 main{
     width: 100%;
     height: 1000px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
+    color: white;
+    font-family: 'Montserrat';
 }
 
 nav{
-    background-color: black;
+    background-color: #000000;
     height: 100vh;
-    width: 300px;
+    width: 250px;
     float: left;
     position: fixed;
 }
 
+.logo{
+    padding: 20px;
+    width: 80%;
+}
+
+.upper-menu{
+    font-size: 15px;
+}
+
+.upper-menu img{
+    width: 42px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.home-box{
+    border-left: #adff2f solid 4px;
+    box-sizing: border-box;
+    /*da controllare il bordo che spinge il blocco a lato*/
+}
+
 .library{ 
-    background-color: blue;
-    height: 1000px;
+    background-color: #141922;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    margin-left: 250px;
+}
+
+.upper-row{
     width: 100%;
-    float: left;
+    height: 80px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.main-block{
+    padding-top: 80px;
+}
+
+.upper-nav{
+    display: flex;
+    justify-content: center;    
+}
+
+.upper-nav a{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
 }
 
 footer{
     width: 100%;
-    background-color: grey;
-    height: 100px;
-    position: fixed;
+    background-color: #282828;
+    height: 90px;
+    position: fixed;   
 }
