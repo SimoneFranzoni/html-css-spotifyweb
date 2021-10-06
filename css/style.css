@@ -1,3 +1,4 @@
+/*common elemnts*/
 *{
     margin: 0;
     padding: 0;
@@ -12,20 +13,42 @@
 
 a{
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 a:hover{
-    text-decoration-line: underline;
+    color: white;
+}
+
+body{
+    color: white;
+    font-family: 'Montserrat';
 }
 
 main{
     width: 100%;
     height: 1000px;
     height: calc(100vh - 90px);
-    color: white;
-    font-family: 'Montserrat';
 }
+
+.icon{
+    width: 30px;
+}
+
+.bar
+{
+    background-color: rgb(48, 47, 47);
+    height: 5px;
+    border-radius: 50px;
+}
+
+.internal-bar{
+    background-color: grey;
+    height: 5px;
+    border-radius: 50px;
+}
+
+/*Start Nav*/
 
 nav{
     background-color: #000000;
@@ -33,6 +56,9 @@ nav{
     width: 250px;
     float: left;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo{
@@ -56,10 +82,47 @@ nav{
     /*da controllare il bordo che spinge il blocco a lato*/
 }
 
+.center-menu .title{
+    padding: 20px 0 15px 10px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.center-menu .new-playlist img{
+    height: 42px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.center-menu .new-playlist a{
+    font-size: 13px;
+}
+
+.center-menu .name-playlist{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.center-menu .name-playlist a{
+    padding-top: 10px;
+}
+
+.lower-menu{
+    padding-bottom: 90px;
+}
+
+.lower-menu img{
+    height: 42px;
+    vertical-align: middle;
+}
+
+/*Start library*/
+
 .library{ 
     background-color: #141922;
     width: calc(100% - 250px);
-    min-height: 100vh;
     margin-left: 250px;
 }
 
@@ -71,7 +134,8 @@ nav{
 }
 
 .main-block{
-    padding-top: 80px;
+    padding: 80px 0 0 20px;
+
 }
 
 .upper-nav{
@@ -84,14 +148,129 @@ nav{
     text-transform: uppercase;
 }
 
+.row-title{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.row-subtitle{
+    color: grey;
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
 .row{
     display: flex;
     flex-direction: row;
 }
+
+.box{
+    padding: 5px 20px 40px 0px;
+    width: 200px;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box .box-title{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.box .box-subtitle{
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+.artist-box{
+    border-radius: 100px;
+}
+
+/*Start footer*/
 
 footer{
     width: 100%;
     background-color: #282828;
     height: 90px;
     position: fixed;   
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-left{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#current-song-photo{
+    width: 50px;
+    height: 50px; 
+}
+
+.current-song{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.current-song-title{
+    font-weight: bolder;
+}
+
+.current-song-subtitle{
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.footer-center .duration-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-center .duration-bar .time{
+    padding: 0 10px;
+    font-size: 10px;
+}
+
+.footer-center .duration-bar .bar{
+    width: 400px;
+}
+
+.footer-center .duration-bar .internal-bar{
+    width: 120px;
+}
+
+.footer-right .bar{
+    width: 100px;
+}
+
+.footer-right .internal-bar{
+    width: 20px;
 }
