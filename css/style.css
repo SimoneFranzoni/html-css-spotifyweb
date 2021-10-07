@@ -157,6 +157,7 @@ nav{
 
 #download-logo{
     width: 15px;
+    margin-left: 6px;
 }
 
 #pre-hr-link{
@@ -246,7 +247,7 @@ nav{
 
 .box{
     padding: 5px 1% 40px 0px;
-    width: 170px;
+    width: 200px;
 }
 
 .box img{
@@ -308,6 +309,7 @@ footer{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
     padding-right: 10px;
     width: 20%;
 }
@@ -332,6 +334,11 @@ footer{
     font-size: 13px;
 }
 
+.footer-center .menu a{
+    font-size: 30px;
+   
+}
+
 .footer-center .duration-bar{
     display: flex;
     flex-direction: row;
@@ -354,7 +361,7 @@ footer{
 }
 
 .footer-right .bar{
-    width: 30%;
+    width: 50%;
 }
 
 .footer-right .internal-bar{
@@ -379,12 +386,22 @@ footer{
     .upper-nav{
         flex-wrap: wrap;
     }
+
+    .box{
+        width: 160px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-right .bar{
+        width: 62px;
+     }
 }
 
 @media (max-width:576px){
     .library{
         margin-left: 50px;
-        width: 570px;
+        width: 496px;
     }
 
     nav{
@@ -397,5 +414,17 @@ footer{
 
     .logo-small{
         display: block;
+    }
+
+    .box{
+        width: 190px;
+    }
+
+    #download-logo{
+        padding-bottom: 15px;
+    }
+
+    .main-block .upper-nav{
+        padding-bottom: 20px;
     }
 }
