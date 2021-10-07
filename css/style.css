@@ -54,7 +54,7 @@ main{
     border-radius: 100px;
     background-color: white;
     position: relative;
-    left: 98%;
+    left: 95%;
     bottom: 50%;
     display: none;
 }
@@ -80,6 +80,7 @@ nav{
 .logo-small{
     display: none;
     width: 30px;
+    margin: 10px;
 }
 
 .upper-menu{
@@ -108,11 +109,28 @@ nav{
     font-weight: bolder;
 }
 
-.center-menu .new-playlist img{
-    height: 42px;
-    
-    vertical-align: middle;
+.center-menu .new-playlist{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+#add-playlist-btn{
+    height: 42px;
+    width: 42px;
+    vertical-align: middle;
+    background-color: grey;
+    margin-right: 5px;
+    color: black;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#add-playlist-btn:hover{
+    background-color: white;
+}
+
 
 .center-menu .new-playlist a{
     font-size: 13px;
@@ -157,12 +175,16 @@ nav{
     width: 30px;
     padding: 0 2px;
     margin-bottom: 5px;
+    color: black;
 }
 
 #post-hr-link{
     font-weight: bolder;
     color: white;
 }
+
+
+
 
 /*Start library*/
 
@@ -369,19 +391,7 @@ footer{
         width: 50px;
     }
 
-    .center-menu{
-        display: none;
-    }
-
-    .nav-link{
-        display: none;
-    }
-
-    nav hr{
-        display: none;
-    }
-
-    .logo-big{
+    .center-menu, .nav-link, .nav hr, .logo-big, #pre-hr-link, #post-hr-link, hr{
         display: none;
     }
 
